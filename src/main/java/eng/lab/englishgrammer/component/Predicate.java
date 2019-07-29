@@ -58,4 +58,10 @@ public class Predicate {
     public String toString() {
         return text;
     }
+
+    public boolean isModalVerb() {
+    }
+
+    public boolean isAuxiliaryVerb() {
+    }
 }

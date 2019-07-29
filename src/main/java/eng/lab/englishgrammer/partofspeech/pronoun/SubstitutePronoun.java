@@ -12,5 +12,4 @@ public class SubstitutePronoun {
     public static String THOSE = "those";
     public static String IT = "it";
     public static String THIS = "this";
-    public static String THAT = "that";
 }

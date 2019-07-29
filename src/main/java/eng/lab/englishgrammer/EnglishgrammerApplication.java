@@ -4,6 +4,7 @@ import eng.lab.englishgrammer.component.Predicate;
 import eng.lab.englishgrammer.component.Subject;
 import eng.lab.englishgrammer.partofspeech.noun.Noun;
 import eng.lab.englishgrammer.partofspeech.verb.Verb;
+import eng.lab.englishgrammer.sentence.declarative.DeclarativeSentence;
 import eng.lab.englishgrammer.sentence.pattern.SVi;
 
 public class EnglishgrammerApplication {
@@ -16,7 +17,11 @@ public class EnglishgrammerApplication {
         Predicate predicate = new Predicate(verb);
 
         SVi sVi = new SVi(subject, predicate);
-        System.out.println(sVi.toString());
+
+        DeclarativeSentence declarativeSentence = new DeclarativeSentence(sVi);
+
+
+        System.out.println(declarativeSentence.toString());
 
     }
 

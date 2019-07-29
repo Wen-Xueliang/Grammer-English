@@ -2,7 +2,6 @@ package eng.lab.englishgrammer.sentence.pattern;
 
 import eng.lab.englishgrammer.component.Predicate;
 import eng.lab.englishgrammer.component.Subject;
-import eng.lab.englishgrammer.utils.ConstantData;
 
 /**
  * @Author: Wen-Xueliang
@@ -15,9 +14,19 @@ public class SVtOiOd {
     private Object objectIndirect;
     private Object objectDirect;
 
-    @Override
-    public String toString() {
-        return subject.toString() + ConstantData.spilt + predicate.toString() + ConstantData.spilt + objectIndirect.toString()
-                + ConstantData.spilt + objectDirect.toString();
+    public Subject getSubject() {
+        return subject;
+    }
+
+    public Predicate getPredicate() {
+        return predicate;
+    }
+
+    public Object getObjectIndirect() {
+        return objectIndirect;
+    }
+
+    public Object getObjectDirect() {
+        return objectDirect;
     }
 }

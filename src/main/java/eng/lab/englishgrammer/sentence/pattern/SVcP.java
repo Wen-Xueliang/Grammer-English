@@ -3,7 +3,6 @@ package eng.lab.englishgrammer.sentence.pattern;
 import eng.lab.englishgrammer.component.Predicate;
 import eng.lab.englishgrammer.component.Predicative;
 import eng.lab.englishgrammer.component.Subject;
-import eng.lab.englishgrammer.utils.ConstantData;
 
 /**
  * @Author: Wen-Xueliang
@@ -15,8 +14,15 @@ public class SVcP {
     private Predicate predicate;
     private Predicative predicative;
 
-    @Override
-    public String toString() {
-        return subject.toString() + ConstantData.spilt + predicate.toString() + ConstantData.spilt + predicative.toString();
+    public Subject getSubject() {
+        return subject;
+    }
+
+    public Predicate getPredicate() {
+        return predicate;
+    }
+
+    public Predicative getPredicative() {
+        return predicative;
     }
 }
