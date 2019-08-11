@@ -29,40 +29,38 @@ public class GeneralQuestion extends InterrogativeSentence {
      * Did you sleep well last night? 你昨晚睡得好吗？
      */
 
-    private String text;
-
     public GeneralQuestion(SVcP sVcP) {
-        text = sVcP.getPredicate().toString() + ConstantData.spilt + sVcP.getSubject().toString() + ConstantData.spilt + sVcP.getPredicative().toString();
+        text = sVcP.getPredicate() + ConstantData.spilt + sVcP.getSubject() + ConstantData.spilt + sVcP.getPredicative();
     }
 
     public GeneralQuestion(SVtO sVtO) {
         Predicate predicate = sVtO.getPredicate();
         if(predicate.isModalVerb() || predicate.isAuxiliaryVerb()) {
-            text = predicate + sVtO.getSubject().toString() + ConstantData.spilt + sVtO.getObject().toString();
+            text = predicate + ConstantData.spilt + sVtO.getSubject() + ConstantData.spilt + sVtO.getObject();
         } else {
-            text = AuxiliaryVerb.DO + sVtO.getSubject().toString() + ConstantData.spilt + sVtO.getObject().toString();
+            text = AuxiliaryVerb.DO + sVtO.getSubject() + ConstantData.spilt + sVtO.getObject();
         }
     }
 
     public GeneralQuestion(SVtOCo sVtOCo) {
         Predicate predicate = sVtOCo.getPredicate();
         if(predicate.isModalVerb() || predicate.isAuxiliaryVerb()) {
-            text = predicate + sVtOCo.getSubject().toString() + ConstantData.spilt + sVtOCo.getObject().toString()
-                    + ConstantData.spilt + sVtOCo.getComplement().toString();
+            text = predicate + ConstantData.spilt + sVtOCo.getSubject() + ConstantData.spilt + sVtOCo.getObject()
+                    + ConstantData.spilt + sVtOCo.getComplement();
         } else {
-            text = AuxiliaryVerb.DO + sVtOCo.getSubject().toString() + ConstantData.spilt + sVtOCo.getObject().toString()
-                    + ConstantData.spilt + sVtOCo.getComplement().toString();
+            text = AuxiliaryVerb.DO + sVtOCo.getSubject() + ConstantData.spilt + sVtOCo.getObject()
+                    + ConstantData.spilt + sVtOCo.getComplement();
         }
     }
 
     public GeneralQuestion(SVtOiOd sVtOiOd) {
         Predicate predicate = sVtOiOd.getPredicate();
         if(predicate.isModalVerb() || predicate.isAuxiliaryVerb()) {
-            text = predicate + sVtOiOd.getSubject().toString() + ConstantData.spilt + sVtOiOd.getObjectIndirect().toString()
-                    + ConstantData.spilt + sVtOiOd.getObjectDirect().toString();
+            text = predicate + ConstantData.spilt + sVtOiOd.getSubject() + ConstantData.spilt + sVtOiOd.getObjectIndirect()
+                    + ConstantData.spilt + sVtOiOd.getObjectDirect();
         } else {
-            text = AuxiliaryVerb.DO + sVtOiOd.getSubject().toString() + ConstantData.spilt + sVtOiOd.getObjectIndirect().toString()
-                    + ConstantData.spilt + sVtOiOd.getObjectDirect().toString();
+            text = AuxiliaryVerb.DO + sVtOiOd.getSubject() + ConstantData.spilt + sVtOiOd.getObjectIndirect()
+                    + ConstantData.spilt + sVtOiOd.getObjectDirect();
         }
     }
 }

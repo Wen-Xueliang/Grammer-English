@@ -6,5 +6,5 @@ package eng.lab.englishgrammer.sentence.interrogative;
  * @Description: 疑问句
  */
 public class InterrogativeSentence {
-
+    protected String text;
 }

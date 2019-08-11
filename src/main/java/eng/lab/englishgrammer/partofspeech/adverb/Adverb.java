@@ -1,4 +1,4 @@
-package eng.lab.englishgrammer.partofspeech;
+package eng.lab.englishgrammer.partofspeech.adverb;
 
 /**
  * @Author: Wen-Xueliang

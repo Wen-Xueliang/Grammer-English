@@ -12,24 +12,24 @@ public class DeclarativeSentence {
     private String text;
 
     public DeclarativeSentence(SVi sVi) {
-        text = sVi.getSubject().toString() + ConstantData.spilt + sVi.getPredicate().toString();
+        text = sVi.getSubject() + ConstantData.spilt + sVi.getPredicate();
     }
 
     public DeclarativeSentence(SVcP sVcP) {
-        text = sVcP.getSubject().toString() + ConstantData.spilt + sVcP.getPredicate().toString() + ConstantData.spilt + sVcP.getPredicative().toString();
+        text = sVcP.getSubject() + ConstantData.spilt + sVcP.getPredicate() + ConstantData.spilt + sVcP.getPredicative();
     }
 
     public DeclarativeSentence(SVtO sVtO) {
-        text =  sVtO.getSubject().toString() + ConstantData.spilt + sVtO.getPredicate().toString() + ConstantData.spilt + sVtO.getObject().toString();
+        text =  sVtO.getSubject() + ConstantData.spilt + sVtO.getPredicate() + ConstantData.spilt + sVtO.getObject();
     }
 
     public DeclarativeSentence(SVtOCo sVtOCo) {
-        text = sVtOCo.getSubject().toString() + ConstantData.spilt + sVtOCo.getPredicate().toString() + ConstantData.spilt + sVtOCo.getObject().toString()
-                + ConstantData.spilt + sVtOCo.getComplement().toString();
+        text = sVtOCo.getSubject() + ConstantData.spilt + sVtOCo.getPredicate() + ConstantData.spilt + sVtOCo.getObject()
+                + ConstantData.spilt + sVtOCo.getComplement();
     }
 
     public DeclarativeSentence(SVtOiOd sVtOiOd) {
-        text = sVtOiOd.getSubject().toString() + ConstantData.spilt + sVtOiOd.getPredicate().toString() + ConstantData.spilt + sVtOiOd.getObjectIndirect().toString()
-                + ConstantData.spilt + sVtOiOd.getObjectDirect().toString();
+        text = sVtOiOd.getSubject() + ConstantData.spilt + sVtOiOd.getPredicate() + ConstantData.spilt + sVtOiOd.getObjectIndirect()
+                + ConstantData.spilt + sVtOiOd.getObjectDirect();
     }
 }

@@ -64,4 +64,7 @@ public class Predicate {
 
     public boolean isAuxiliaryVerb() {
     }
+
+    public Predicate negative() {
+    }
 }
