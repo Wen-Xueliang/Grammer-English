@@ -1,5 +1,6 @@
 package eng.lab.englishgrammer.sentence.interrogative;
 
+import eng.lab.englishgrammer.partofspeech.adverb.InterrogativeAdverb;
 import eng.lab.englishgrammer.partofspeech.pronoun.InterrogativePronoun;
 
 /**
@@ -8,6 +9,6 @@ import eng.lab.englishgrammer.partofspeech.pronoun.InterrogativePronoun;
  * @Description: 特殊疑问词
  */
 public class WhWords {
-
     InterrogativePronoun interrogativePronoun;
+    InterrogativeAdverb interrogativeAdverb;
 }

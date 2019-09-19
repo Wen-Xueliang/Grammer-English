@@ -5,5 +5,5 @@ package eng.lab.englishgrammer.clause;
  * @Date: Created in 2019/5/29 22:25
  * @Description: 表语从句
  */
-public class PredicativeClause {
+public class PredicativeClause extends NounClause {
 }

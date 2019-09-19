@@ -5,10 +5,9 @@ package eng.lab.englishgrammer.partofspeech.noun;
  * @Date: Created in 2019/5/29 22:25
  * @Description: 专有名词：表示特定的人，物，机构或场所等的名词
  */
-public class ProperNoun extends Noun {
+public class ProperNoun extends UnCountableNoun {
 
     private String type;
-    private String text;
 
     /**
      * 人名及头衔

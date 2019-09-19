@@ -5,7 +5,9 @@ package eng.lab.englishgrammer.partofspeech.adverb;
  * @Date: Created in 2019/7/30 22:13
  * @Description: 时间副词
  */
-public class AdverbialOfTime extends Adverb {
+public class TimeAdverbial extends Adverb {
+    //通常位于句末，有时也位于句首
+
     //常用副词
     //when
     public static String YESTERDAY = "yesterday";

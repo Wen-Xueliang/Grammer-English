@@ -6,6 +6,4 @@ package eng.lab.englishgrammer.partofspeech.noun;
  * @Description: 普通名词
  */
 public abstract class CommonNoun extends Noun {
-
-    public abstract boolean isCountable();
 }

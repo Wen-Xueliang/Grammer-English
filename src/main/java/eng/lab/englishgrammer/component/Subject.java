@@ -2,7 +2,7 @@ package eng.lab.englishgrammer.component;
 
 import eng.lab.englishgrammer.clause.SubjectClause;
 import eng.lab.englishgrammer.partofspeech.noun.Noun;
-import eng.lab.englishgrammer.partofspeech.Numeral;
+import eng.lab.englishgrammer.partofspeech.numeral.Numeral;
 import eng.lab.englishgrammer.partofspeech.pronoun.Pronoun;
 import eng.lab.englishgrammer.phrases.GerundPhrase;
 import eng.lab.englishgrammer.phrases.InfinitivePhrase;

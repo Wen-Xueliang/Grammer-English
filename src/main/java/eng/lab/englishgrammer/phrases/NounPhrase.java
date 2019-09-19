@@ -1,9 +1,11 @@
 package eng.lab.englishgrammer.phrases;
 
 import eng.lab.englishgrammer.component.PostAttributive;
-import eng.lab.englishgrammer.partofspeech.Adjective;
+import eng.lab.englishgrammer.partofspeech.adjective.Adjective;
+import eng.lab.englishgrammer.partofspeech.noun.MassNoun;
 import eng.lab.englishgrammer.partofspeech.noun.Noun;
 import eng.lab.englishgrammer.partofspeech.determiner.Determiner;
+import eng.lab.englishgrammer.partofspeech.numeral.Numeral;
 import eng.lab.englishgrammer.utils.ConstantData;
 
 import java.util.List;
@@ -15,31 +17,22 @@ import java.util.List;
  */
 public class NounPhrase {
 
-    private Determiner determiner;
-    private List<Adjective> adjectives;
-    private Noun headword;
-    private PostAttributive postAttributive;
+    private String text;
 
-    public NounPhrase(Noun headword) {
-        this.headword = headword;
+    public NounPhrase(Noun headword, Determiner determiner, List<Adjective> adjectives,
+                      PostAttributive postAttributive) {
+        StringBuffer adjectiveStr = new StringBuffer();
+        adjectives.forEach(adjective -> adjectiveStr.append(adjective.toString()).append(ConstantData.spilt));
+        text = determiner.toString() + ConstantData.spilt + adjectiveStr.toString() + ConstantData.spilt + headword.toString() + ConstantData.spilt + postAttributive.toString();
     }
 
-    public void setDeterminer(Determiner determiner) {
-        this.determiner = determiner;
-    }
-
-    public void setAdjective(List<Adjective> adjectives) {
-        this.adjectives = adjectives;
-    }
-
-    public void setPostAttributive(PostAttributive postAttributive) {
-        this.postAttributive = postAttributive;
+    public NounPhrase(Numeral numeral, Noun measure, MassNoun massNoun) {
+       text = numeral.toString() + ConstantData.spilt + measure.toString() + ConstantData.spilt
+               + "of" + ConstantData.spilt + massNoun.toString();
     }
 
     @Override
     public String toString() {
-        StringBuffer adjectiveStr = new StringBuffer();
-        adjectives.forEach(adjective -> adjectiveStr.append(adjective.toString()).append(ConstantData.spilt));
-        return determiner.toString() + ConstantData.spilt + adjectiveStr.toString() + ConstantData.spilt + headword.toString() + ConstantData.spilt + postAttributive.toString();
+        return text;
     }
 }

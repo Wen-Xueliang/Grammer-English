@@ -12,6 +12,7 @@ public class Article extends Determiner{
 
     public static String VOWEL_A = "an";
 
+    /*the+adj  = 什么的人 复数*/
     public static String THE = "the";
 
     public static String VOWEL_THE = "the";

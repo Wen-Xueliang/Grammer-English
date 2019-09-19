@@ -1,6 +1,9 @@
 package eng.lab.englishgrammer.sentence.interrogative;
 
 import eng.lab.englishgrammer.component.Predicate;
+import eng.lab.englishgrammer.component.Subject;
+import eng.lab.englishgrammer.partofspeech.pronoun.PersonalPronoun;
+import eng.lab.englishgrammer.partofspeech.pronoun.Pronoun;
 import eng.lab.englishgrammer.partofspeech.verb.AuxiliaryVerb;
 import eng.lab.englishgrammer.sentence.declarative.DeclarativeSentence;
 import eng.lab.englishgrammer.sentence.pattern.SVcP;
@@ -62,5 +65,28 @@ public class GeneralQuestion extends InterrogativeSentence {
             text = AuxiliaryVerb.DO + sVtOiOd.getSubject() + ConstantData.spilt + sVtOiOd.getObjectIndirect()
                     + ConstantData.spilt + sVtOiOd.getObjectDirect();
         }
+    }
+
+    public String answer(String person, String thirdPersonMean, boolean yesOrNo) {
+        String answer = "";
+        if(person.equals("second")) {
+            answer = PersonalPronoun.I + ConstantData.spilt + AuxiliaryVerb.AM;
+        } else if(person.equals("first")) {
+            answer = PersonalPronoun.YOU + ConstantData.spilt + AuxiliaryVerb.ARE;
+        } else if(person.equals("third")) {
+            if(thirdPersonMean.equals("boy")) {
+                answer = PersonalPronoun.HE + ConstantData.spilt + AuxiliaryVerb.IS;
+            } else if(thirdPersonMean.equals("girl")) {
+                answer = PersonalPronoun.SHE + ConstantData.spilt + AuxiliaryVerb.IS;
+            } else if(thirdPersonMean.equals("they")) {
+                answer = PersonalPronoun.THEY + ConstantData.spilt + AuxiliaryVerb.ARE;
+            }
+        }
+        if(yesOrNo) {
+            answer =  "Yes, " + answer;
+        } else {
+            answer =  "No, " + answer + " not";
+        }
+        return answer;
     }
 }

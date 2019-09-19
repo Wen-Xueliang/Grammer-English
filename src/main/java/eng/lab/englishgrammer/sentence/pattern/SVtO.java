@@ -1,6 +1,6 @@
 package eng.lab.englishgrammer.sentence.pattern;
 
-import eng.lab.englishgrammer.component.Object;
+import eng.lab.englishgrammer.component.object.Object;
 import eng.lab.englishgrammer.component.Predicate;
 import eng.lab.englishgrammer.component.Subject;
 

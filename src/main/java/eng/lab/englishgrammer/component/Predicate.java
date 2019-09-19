@@ -26,30 +26,17 @@ public class Predicate {
     public String buildPredicate() {
         String verbStr = verb.toString();
         switch (tense) {
-            case PRESENT: switch (aspect) {
-                case SIMPLE: return verbStr;
-                case CONTINUOUS: return AuxiliaryVerb.BE + verbStr;
-                case PERFECT: return AuxiliaryVerb.HAVE + verbStr;
-                case PERFECT_CONTINUOUS: return AuxiliaryVerb.HAVE + " been " + verbStr;
-            }break;
-            case PAST: switch (aspect) {
-                case SIMPLE: return verbStr + "ed";
-                case CONTINUOUS: return AuxiliaryVerb.BE + verbStr;
-                case PERFECT: return AuxiliaryVerb.HAVE + verbStr;
-                case PERFECT_CONTINUOUS: return AuxiliaryVerb.HAVE + " been " + verbStr;
-            }break;
-            case FUTURE: switch (aspect) {
-                case SIMPLE: return ModalVerb.WILL + ConstantData.spilt + verbStr;
-                case CONTINUOUS: return AuxiliaryVerb.BE + verbStr;
-                case PERFECT: return AuxiliaryVerb.HAVE + verbStr;
-                case PERFECT_CONTINUOUS: return AuxiliaryVerb.HAVE + " been " + verbStr;
-            }break;
-            case PASS_FUTURE: switch (aspect) {
-                case SIMPLE: return ModalVerb.WOULD + ConstantData.spilt + verbStr;
-                case CONTINUOUS: return AuxiliaryVerb.BE + verbStr;
-                case PERFECT: return AuxiliaryVerb.HAVE + verbStr;
-                case PERFECT_CONTINUOUS: return AuxiliaryVerb.HAVE + " been " + verbStr;
-            }break;
+            case PRESENT: ;
+            case PAST: ;
+            case FUTURE: ;
+            case PASS_FUTURE: ;
+        }
+
+        switch (aspect) {
+            case SIMPLE: return ModalVerb.WOULD + ConstantData.spilt + verbStr;
+            case CONTINUOUS: return AuxiliaryVerb.BE + verbStr;
+            case PERFECT: return AuxiliaryVerb.HAVE + verbStr;
+            case PERFECT_CONTINUOUS: return AuxiliaryVerb.HAVE + " been " + verbStr;
         }
         return verbStr;
     }
