@@ -5,7 +5,7 @@ package eng.lab.englishgrammer.partofspeech.adverb;
  * @Date: Created in 2019/7/30 22:13
  * @Description: 时间副词
  */
-public class TimeAdverbial extends Adverb {
+public class TimeAdverb extends Adverb {
     //通常位于句末，有时也位于句首
 
     //常用副词

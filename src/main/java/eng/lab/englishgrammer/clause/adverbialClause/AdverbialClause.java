@@ -1,4 +1,4 @@
-package eng.lab.englishgrammer.clause;
+package eng.lab.englishgrammer.clause.adverbialClause;
 
 /**
  * @Author: Wen-Xueliang
