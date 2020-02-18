@@ -3,7 +3,7 @@ package eng.lab.englishgrammer.partofspeech.pronoun;
 /**
  * @Author: Wen-Xueliang
  * @Date: Created in 2019/7/14 14:21
- * @Description: 疑问代词
+ * @Description: 疑问代词:代替一个不确定的、等待对方来确认的人、物、事
  */
 public class InterrogativePronoun {
     public static String WHO = "who";

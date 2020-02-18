@@ -1,11 +1,8 @@
 package eng.lab.englishgrammer.sentence.interrogative;
 
-import eng.lab.englishgrammer.component.Predicate;
-import eng.lab.englishgrammer.component.Subject;
+import eng.lab.englishgrammer.component.predicate.Predicate;
 import eng.lab.englishgrammer.partofspeech.pronoun.PersonalPronoun;
-import eng.lab.englishgrammer.partofspeech.pronoun.Pronoun;
 import eng.lab.englishgrammer.partofspeech.verb.AuxiliaryVerb;
-import eng.lab.englishgrammer.sentence.declarative.DeclarativeSentence;
 import eng.lab.englishgrammer.sentence.pattern.SVcP;
 import eng.lab.englishgrammer.sentence.pattern.SVtO;
 import eng.lab.englishgrammer.sentence.pattern.SVtOCo;

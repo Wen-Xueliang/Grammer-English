@@ -1,7 +1,7 @@
 package eng.lab.englishgrammer;
 
-import eng.lab.englishgrammer.component.Predicate;
-import eng.lab.englishgrammer.component.Subject;
+import eng.lab.englishgrammer.component.predicate.Predicate;
+import eng.lab.englishgrammer.component.subject.Subject;
 import eng.lab.englishgrammer.partofspeech.noun.Noun;
 import eng.lab.englishgrammer.partofspeech.verb.Verb;
 import eng.lab.englishgrammer.sentence.declarative.DeclarativeSentence;

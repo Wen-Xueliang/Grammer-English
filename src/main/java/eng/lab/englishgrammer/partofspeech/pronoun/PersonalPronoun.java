@@ -3,7 +3,7 @@ package eng.lab.englishgrammer.partofspeech.pronoun;
 /**
  * @Author: Wen-Xueliang
  * @Date: Created in 2019/7/9 22:02
- * @Description: 人称代词
+ * @Description: 人称代词：为了替代人或事物的词
  */
 public class PersonalPronoun extends Pronoun {
 

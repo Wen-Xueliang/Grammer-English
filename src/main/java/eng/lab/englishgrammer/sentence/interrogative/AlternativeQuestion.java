@@ -1,8 +1,6 @@
 package eng.lab.englishgrammer.sentence.interrogative;
 
-import eng.lab.englishgrammer.component.Predicate;
-import eng.lab.englishgrammer.component.Subject;
-import eng.lab.englishgrammer.partofspeech.verb.AuxiliaryVerb;
+import eng.lab.englishgrammer.component.subject.Subject;
 import eng.lab.englishgrammer.sentence.pattern.SVtO;
 import eng.lab.englishgrammer.sentence.pattern.SVtOCo;
 import eng.lab.englishgrammer.sentence.pattern.SVtOiOd;

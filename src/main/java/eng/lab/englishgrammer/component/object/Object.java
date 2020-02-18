@@ -1,10 +1,10 @@
 package eng.lab.englishgrammer.component.object;
 
-import eng.lab.englishgrammer.clause.ObjectClause;
-import eng.lab.englishgrammer.partofspeech.Infinitive;
-import eng.lab.englishgrammer.partofspeech.Participial;
+import eng.lab.englishgrammer.clause.objectClause.ObjectClause;
+import eng.lab.englishgrammer.partofspeech.other.Infinitive;
+import eng.lab.englishgrammer.partofspeech.other.Participial;
 import eng.lab.englishgrammer.partofspeech.noun.Noun;
-import eng.lab.englishgrammer.partofspeech.numeral.Numeral;
+import eng.lab.englishgrammer.partofspeech.determiner.numeral.Numeral;
 import eng.lab.englishgrammer.partofspeech.pronoun.Pronoun;
 
 /**

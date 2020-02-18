@@ -3,11 +3,9 @@ package eng.lab.englishgrammer.partofspeech.pronoun;
 /**
  * @Author: Wen-Xueliang
  * @Date: Created in 2019/7/14 14:23
- * @Description: 连接代词
+ * @Description: 连接代词:疑问代词在引起名词性从句时，被称为连接代词。
  */
 public class ConjunctivePronoun {
-
-    //
 
     public static String WHO = "who";
     public static String WHOSE = "whose";

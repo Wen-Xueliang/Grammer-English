@@ -6,4 +6,5 @@ package eng.lab.englishgrammer.partofspeech.determiner;
  * @Description: 名词属格
  */
 public class NounPossessive extends Determiner {
+
 }

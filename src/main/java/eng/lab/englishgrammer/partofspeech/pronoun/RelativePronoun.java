@@ -3,7 +3,7 @@ package eng.lab.englishgrammer.partofspeech.pronoun;
 /**
  * @Author: Wen-Xueliang
  * @Date: Created in 2019/7/14 14:22
- * @Description: 关系代词
+ * @Description: 关系代词:用于引导定语从句的先行词，用于替代定语从句的某个成分。
  */
 public class RelativePronoun {
 
@@ -24,4 +24,9 @@ public class RelativePronoun {
     public static String THAT_Oc_Nl = "that";//宾格
     public static String OF_WHICH_Nl = "of which";//属格
     public static String WHOSE_Pc_Nl = "whose";//属格
+
+    //特殊代词
+    public static String AS = "as";
+    public static String BUT = "but";
+    public static String THAN = "than";
 }

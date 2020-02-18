@@ -13,12 +13,17 @@ public class CountableNoun extends Noun {
 
     private Map<String, String> irregularNoun;
     private List<String> peersNoun;
+    protected boolean isPlural = false;//是否为复数
 
-    @Override
-    public boolean isCountable() {
-        return true;
-    }
-
+    /**
+     * 在后面加s，比如book-》books
+     * 以s、x、o、sh、ch结尾的则在后面加es，比如bus-》buses
+     * 以y结尾的在后面将y改为ies，比如story-》stories
+     * 以f、fe结尾的在后面将f改为ves，比如wolf-》wolves
+     * 单复数同行的名词不需要修改，比如fish-》fish
+     * 不规则名词，比如man-》men
+     * TODO：以O结尾的无生命单词和以元音字母+Y结尾的单词可以直接后面加s，比如piano-》pianos，boy-》boys
+     */
     private String toPlural(String text) {
         isPlural = true;
         if("s".equals(text.substring(text.length() - 1))

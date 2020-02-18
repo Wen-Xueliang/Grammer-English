@@ -2,7 +2,7 @@ package eng.lab.englishgrammer.component.adverbial;
 
 import eng.lab.englishgrammer.clause.adverbialClause.TimeAdverbialClause;
 import eng.lab.englishgrammer.partofspeech.adverb.TimeAdverb;
-import eng.lab.englishgrammer.phrases.PrepositionalPhrase;
+import eng.lab.englishgrammer.phrases.prepositionalPhrase.PrepositionalPhrase;
 
 /**
  * @Author: Wen-Xueliang

@@ -7,7 +7,7 @@ package eng.lab.englishgrammer.partofspeech;
  */
 public abstract class PartOfSpeech {
 
-    String text;
+    protected String text;
 
     @Override
     public String toString() {

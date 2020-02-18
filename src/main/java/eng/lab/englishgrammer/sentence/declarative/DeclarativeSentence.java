@@ -9,7 +9,7 @@ import eng.lab.englishgrammer.utils.ConstantData;
  * @Description: 陈述句
  */
 public class DeclarativeSentence {
-    private String text;
+    protected String text;
 
     public DeclarativeSentence(SVi sVi) {
         text = sVi.getSubject() + ConstantData.spilt + sVi.getPredicate();
@@ -31,5 +31,8 @@ public class DeclarativeSentence {
     public DeclarativeSentence(SVtOiOd sVtOiOd) {
         text = sVtOiOd.getSubject() + ConstantData.spilt + sVtOiOd.getPredicate() + ConstantData.spilt + sVtOiOd.getObjectIndirect()
                 + ConstantData.spilt + sVtOiOd.getObjectDirect();
+    }
+
+    public DeclarativeSentence() {
     }
 }

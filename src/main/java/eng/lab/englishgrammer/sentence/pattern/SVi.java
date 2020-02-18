@@ -1,7 +1,7 @@
 package eng.lab.englishgrammer.sentence.pattern;
 
-import eng.lab.englishgrammer.component.Predicate;
-import eng.lab.englishgrammer.component.Subject;
+import eng.lab.englishgrammer.component.predicate.Predicate;
+import eng.lab.englishgrammer.component.subject.Subject;
 
 /**
  * @Author: Wen-Xueliang

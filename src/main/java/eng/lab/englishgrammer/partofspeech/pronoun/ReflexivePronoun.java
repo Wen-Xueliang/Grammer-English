@@ -3,7 +3,7 @@ package eng.lab.englishgrammer.partofspeech.pronoun;
 /**
  * @Author: Wen-Xueliang
  * @Date: Created in 2019/7/14 14:19
- * @Description: 反身代词
+ * @Description: 反身代词：替代动作发出者本身的代词
  */
 public class ReflexivePronoun {
 

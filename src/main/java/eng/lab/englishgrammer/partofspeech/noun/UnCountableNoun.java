@@ -8,11 +8,7 @@ package eng.lab.englishgrammer.partofspeech.noun;
 public class UnCountableNoun extends Noun {
 
     /**
-     * 不可数名词可以用some、any、little\a little或者much连接,不可以用数词连接,如果连接要在数词后加量词再加of;
+     * some、any、little\a little、much+不可数名词， 比如some water（一些水）
+     * 数词+量词+of+不可数名词，比如A cup of water（一杯水）
      */
-
-    @Override
-    public boolean isCountable() {
-        return false;
-    }
 }
