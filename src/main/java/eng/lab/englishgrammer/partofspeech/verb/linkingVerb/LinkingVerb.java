@@ -1,13 +1,17 @@
-package eng.lab.englishgrammer.partofspeech.verb;
+package eng.lab.englishgrammer.partofspeech.verb.linkingVerb;
 
 /**
  * @Author: Wen-Xueliang
  * @Date: Created in 2019/8/19 20:11
- * @Description: 连系动词
+ * @Description: 连系动词:辅助主语的词，本身有词义，后面跟表语构成主系表结构，表示主语的身份、类别、特征、状态等。
  */
 public class LinkingVerb {
 
-    //表示主语的特征,状态的
+
+    //be动词，表示主语状态
+    public static String BE = "be";
+
+    //感官动词，表对主语的感觉
     public static String FEEL = "feel";
     public static String LOOK = "look";
     public static String SOUND = "sound";
@@ -42,6 +46,4 @@ public class LinkingVerb {
     public static String MARRY = "marry";
     public static String DIE = "die";
     public static String BE_BORN = "be born";
-
-
 }

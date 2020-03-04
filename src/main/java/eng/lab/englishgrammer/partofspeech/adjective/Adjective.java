@@ -1,5 +1,6 @@
 package eng.lab.englishgrammer.partofspeech.adjective;
 
+import eng.lab.englishgrammer.partofspeech.PartOfSpeech;
 import eng.lab.englishgrammer.utils.ConstantData;
 import eng.lab.englishgrammer.utils.PhoneticSymbol;
 
@@ -9,14 +10,11 @@ import java.util.List;
 /**
  * @Author: Wen-Xueliang
  * @Date: Created in 2019/5/29 22:25
- * @Description: 形容词
+ * @Description: 形容词:描写或修饰名词或代词，表示人或事物的性质、状态、特征或属性，常用作定语，也可作表语或补语。
  */
-public class Adjective {
+public class Adjective extends PartOfSpeech {
 
     List<String> nolevelAdjectives = new ArrayList<String>();
-
-    private String text;
-    PhoneticSymbol phoneticSymbol;
 
     public String getAbbreviate() throws Exception {
         return "adj.";
@@ -43,7 +41,8 @@ public class Adjective {
         nolevelAdjectives.add("unanimous");
     }
 
-    public String comparative() {
+    // 比较级
+    public String comparative(PhoneticSymbol phoneticSymbol) {
         String lowerTest = text.toLowerCase();
         if(nolevelAdjectives.contains(lowerTest)) {
             return lowerTest;
@@ -96,7 +95,8 @@ public class Adjective {
         return lowerTest;
     }
 
-    public String superlative() {
+    //最高级
+    public String superlative(PhoneticSymbol phoneticSymbol) {
         String lowerTest = text.toLowerCase();
         if(nolevelAdjectives.contains(lowerTest)) {
             return lowerTest;

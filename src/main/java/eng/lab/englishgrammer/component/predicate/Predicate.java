@@ -1,6 +1,8 @@
 package eng.lab.englishgrammer.component.predicate;
 
 import eng.lab.englishgrammer.partofspeech.verb.*;
+import eng.lab.englishgrammer.partofspeech.verb.auxiliaryVerb.AuxiliaryVerb;
+import eng.lab.englishgrammer.partofspeech.verb.modalVerb.ModalVerb;
 import eng.lab.englishgrammer.utils.ConstantData;
 
 /**
