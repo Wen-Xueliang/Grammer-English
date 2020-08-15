@@ -1,14 +1,14 @@
 package eng.lab.englishgrammer.partofspeech.determiner.article;
 
-import eng.lab.englishgrammer.partofspeech.determiner.Determiner;
+import eng.lab.englishgrammer.partofspeech.PartOfSpeech;
 import eng.lab.englishgrammer.utils.PhoneticSymbol;
 
 /**
  * @Author: Wen-Xueliang
  * @Date: Created in 2019/5/29 22:25
- * @Description: 冠词
+ * @Description: 冠词: 放于名词之前，起指示限定作用
  */
-public class Article extends Determiner {
+public class Article extends PartOfSpeech {
     public static String A = "a";
 
     public static String VOWEL_A = "an";

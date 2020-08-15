@@ -1,8 +1,5 @@
 package eng.lab.englishgrammer.partofspeech.pronoun;
 
-import eng.lab.englishgrammer.partofspeech.determiner.IndividualDeterminer;
-import eng.lab.englishgrammer.partofspeech.determiner.quantifier.Quantifier;
-
 /**
  * @Author: Wen-Xueliang
  * @Date: Created in 2019/7/14 14:24

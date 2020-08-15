@@ -6,4 +6,9 @@ package eng.lab.englishgrammer.sentence.exclamatory;
  * @Description: 感叹句
  */
 public class ExclamatorySentence {
+    protected String text;
+
+    public ExclamatorySentence() {
+
+    }
 }

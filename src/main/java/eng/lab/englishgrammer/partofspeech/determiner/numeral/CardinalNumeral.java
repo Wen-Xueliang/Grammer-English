@@ -5,9 +5,9 @@ import eng.lab.englishgrammer.utils.ConstantData;
 /**
  * @Author: Wen-Xueliang
  * @Date: Created in 2019/8/14 21:55
- * @Description: 基数词
+ * @Description: 序数词:表示顺序的词
  */
-public class CardinalNumeral {
+public class CardinalNumeral extends Numeral {
 
     public static String FIRST = "first";
     public static String SECOND = "second";
@@ -43,24 +43,4 @@ public class CardinalNumeral {
     public static String THOUSANDTH = "thousandth";
     public static String MILLIONTH = "millionth";
     public static String BILLIONTH = "billionth";
-
-    public String biggerThan20(String tensDigitByOrdinal, String singleDigit) {
-        return tensDigitByOrdinal + "-" +  singleDigit;
-    }
-
-    public String biggerThan100(String hundredsDigit, String lessHundredsDigit) {
-        return hundredsDigit + ConstantData.spilt + OrdinalNumeral.HUNDRED + ConstantData.spilt + lessHundredsDigit;
-    }
-
-    public String biggerThan1000(String thousandsDigit, String lessThousandsDigit) {
-        return thousandsDigit + ConstantData.spilt + OrdinalNumeral.THOUSAND + ConstantData.spilt + lessThousandsDigit;
-    }
-
-    public String biggerThan1000000(String millionsDigit, String lessMillionsDigit) {
-        return millionsDigit + ConstantData.spilt + OrdinalNumeral.MILLION + ConstantData.spilt + lessMillionsDigit;
-    }
-
-    public String biggerThan1000000000(String billionsDigit, String lessBillionsDigit) {
-        return billionsDigit + ConstantData.spilt + OrdinalNumeral.BILLION + ConstantData.spilt + lessBillionsDigit;
-    }
 }

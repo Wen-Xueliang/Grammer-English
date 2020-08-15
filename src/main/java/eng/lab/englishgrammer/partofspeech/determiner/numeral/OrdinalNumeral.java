@@ -1,13 +1,11 @@
 package eng.lab.englishgrammer.partofspeech.determiner.numeral;
 
-import eng.lab.englishgrammer.utils.ConstantData;
-
 /**
  * @Author: Wen-Xueliang
  * @Date: Created in 2019/8/14 21:55
- * @Description: 序数词
+ * @Description: 基数词:表示数目的词
  */
-public class OrdinalNumeral {
+public class OrdinalNumeral extends Numeral  {
     //在句中可作主语、宾语、定语、表语、同位语。
 
     public static String ONE = "one";
@@ -44,25 +42,4 @@ public class OrdinalNumeral {
     public static String THOUSAND = "thousand";
     public static String MILLION = "million";
     public static String BILLION = "billion";
-
-    public String biggerThan20(String tensDigit, String singleDigit) {
-        return tensDigit + "-" +  singleDigit;
-    }
-
-    public String biggerThan100(String hundredsDigit, String lessHundredsDigit) {
-        return hundredsDigit + ConstantData.spilt + HUNDRED + ConstantData.spilt + lessHundredsDigit;
-    }
-
-    public String biggerThan1000(String thousandsDigit, String lessThousandsDigit) {
-        return thousandsDigit + ConstantData.spilt + THOUSAND + ConstantData.spilt + lessThousandsDigit;
-    }
-
-    public String biggerThan1000000(String millionsDigit, String lessMillionsDigit) {
-        return millionsDigit + ConstantData.spilt + MILLION + ConstantData.spilt + lessMillionsDigit;
-    }
-
-    public String biggerThan1000000000(String billionsDigit, String lessBillionsDigit) {
-        return billionsDigit + ConstantData.spilt + BILLION + ConstantData.spilt + lessBillionsDigit;
-    }
-
 }
